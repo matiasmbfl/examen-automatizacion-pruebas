@@ -41,14 +41,16 @@ jobs:
           chmod +x scripts/*.sh
           ./scripts/deploy-test.sh target/automatizacion-pruebas-1.0.0-SNAPSHOT.jar
 
-          - name: Segundo despliegue Blue-Green (solo workflow_dispatch)
-          if: ${{ github.event_name == 'workflow_dispatch' }}
-          run: ./scripts/deploy-test.sh target/automatizacion-pruebas-1.0.0-SNAPSHOT.jar
-        
-        - name: Rollback demostrativo (solo workflow_dispatch)
-          if: ${{ github.event_name == 'workflow_dispatch' }}
-          run: ./scripts/rollback.sh
-        
+      - name: Segundo despliegue Blue-Green (solo workflow_dispatch)
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        run: ./scripts/deploy-test.sh target/automatizacion-pruebas-1.0.0-SNAPSHOT.jar
+
+      - name: Rollback demostrativo (solo workflow_dispatch)
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        run: ./scripts/rollback.sh
+
+
+
 
       - name: Publicar reportes de pruebas
         if: always()
