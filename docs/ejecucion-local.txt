@@ -1,0 +1,236 @@
+=== ENTORNO ===
+openjdk version "17.0.20.1" 2026-08-18
+OpenJDK Runtime Environment (build 17.0.20.1+1-1-24.04-Ubuntu)
+OpenJDK 64-Bit Server VM (build 17.0.20.1+1-1-24.04-Ubuntu, mixed mode, sharing)
+javac 17.0.20.1
+[1mApache Maven 3.8.7[m
+Maven home: /usr/share/maven
+Java version: 17.0.20.1, vendor: Ubuntu, runtime: /usr/lib/jvm/java-17-openjdk-amd64
+Default locale: en, platform encoding: UTF-8
+
+=== UNIT TESTS ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.example:automatizacion-pruebas >-----------------
+[INFO] Building Automatización de pruebas - Examen final 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ automatizacion-pruebas ---
+[INFO] Deleting /home/ubuntu/examen-automatizacion-pruebas/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automatizacion-pruebas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/examen-automatizacion-pruebas/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ automatizacion-pruebas ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automatizacion-pruebas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/examen-automatizacion-pruebas/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ automatizacion-pruebas ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.5.2:test (default-test) @ automatizacion-pruebas ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.automatizacion.GreetingServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s -- in com.example.automatizacion.GreetingServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.201 s
+[INFO] Finished at: 2026-09-26T01:15:42Z
+[INFO] ------------------------------------------------------------------------
+
+=== INTEGRATION TESTS ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.example:automatizacion-pruebas >-----------------
+[INFO] Building Automatización de pruebas - Examen final 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ automatizacion-pruebas ---
+[INFO] Deleting /home/ubuntu/examen-automatizacion-pruebas/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automatizacion-pruebas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/examen-automatizacion-pruebas/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ automatizacion-pruebas ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automatizacion-pruebas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/examen-automatizacion-pruebas/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ automatizacion-pruebas ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.5.2:test (default-test) @ automatizacion-pruebas ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.automatizacion.GreetingServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s -- in com.example.automatizacion.GreetingServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ automatizacion-pruebas ---
+[INFO] Building jar: /home/ubuntu/examen-automatizacion-pruebas/target/automatizacion-pruebas-1.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:3.5.2:integration-test (default) @ automatizacion-pruebas ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.automatizacion.GreetingServiceIT
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.060 s -- in com.example.automatizacion.GreetingServiceIT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:3.5.2:verify (default) @ automatizacion-pruebas ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.208 s
+[INFO] Finished at: 2026-09-26T01:15:47Z
+[INFO] ------------------------------------------------------------------------
+
+=== ACCEPTANCE TEST GATE ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.example:automatizacion-pruebas >-----------------
+[INFO] Building Automatización de pruebas - Examen final 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ automatizacion-pruebas ---
+[INFO] Deleting /home/ubuntu/examen-automatizacion-pruebas/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automatizacion-pruebas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/examen-automatizacion-pruebas/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ automatizacion-pruebas ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automatizacion-pruebas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/examen-automatizacion-pruebas/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ automatizacion-pruebas ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.5.2:test (default-test) @ automatizacion-pruebas ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.automatizacion.GreetingServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s -- in com.example.automatizacion.GreetingServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ automatizacion-pruebas ---
+[INFO] Building jar: /home/ubuntu/examen-automatizacion-pruebas/target/automatizacion-pruebas-1.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:3.5.2:integration-test (default) @ automatizacion-pruebas ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.automatizacion.GreetingAcceptanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s -- in com.example.automatizacion.GreetingAcceptanceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:3.5.2:verify (default) @ automatizacion-pruebas ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.103 s
+[INFO] Finished at: 2026-09-26T01:15:51Z
+[INFO] ------------------------------------------------------------------------
+
+=== BUILD ARTIFACT ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.example:automatizacion-pruebas >-----------------
+[INFO] Building Automatización de pruebas - Examen final 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ automatizacion-pruebas ---
+[INFO] Deleting /home/ubuntu/examen-automatizacion-pruebas/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automatizacion-pruebas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/examen-automatizacion-pruebas/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ automatizacion-pruebas ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automatizacion-pruebas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/examen-automatizacion-pruebas/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ automatizacion-pruebas ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.5.2:test (default-test) @ automatizacion-pruebas ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ automatizacion-pruebas ---
+[INFO] Building jar: /home/ubuntu/examen-automatizacion-pruebas/target/automatizacion-pruebas-1.0.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.720 s
+[INFO] Finished at: 2026-09-26T01:15:54Z
+[INFO] ------------------------------------------------------------------------
+
+=== BLUE-GREEN DEPLOYMENT 1 ===
+DEPLOYMENT_OK strategy=blue-green active_slot=blue version=automatizacion-pruebas-1.0.0-SNAPSHOT environment=test
+
+=== BLUE-GREEN DEPLOYMENT 2 ===
+DEPLOYMENT_OK strategy=blue-green active_slot=green version=automatizacion-pruebas-1.0.0-SNAPSHOT environment=test
+
+=== ROLLBACK ===
+ROLLBACK_OK active_slot=blue version=automatizacion-pruebas-1.0.0-SNAPSHOT
+
+=== STATE ===
+active=blue
+last-successful=automatizacion-pruebas-1.0.0-SNAPSHOT

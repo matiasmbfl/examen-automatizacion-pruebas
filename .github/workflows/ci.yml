@@ -1,0 +1,57 @@
+name: CI y Deployment Pipeline
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, 'feature/**' ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Build
+        run: mvn -B -ntp clean package -DskipTests
+
+      - name: Pruebas unitarias
+        run: mvn -B -ntp test
+
+      - name: Pruebas de integración
+        run: mvn -B -ntp verify -Pintegration
+
+      - name: Acceptance Test Gate
+        run: mvn -B -ntp verify -Pacceptance
+
+      - name: Despliegue Blue-Green a test
+        run: |
+          chmod +x scripts/*.sh
+          ./scripts/deploy-test.sh target/automatizacion-pruebas-1.0.0-SNAPSHOT.jar
+
+      - name: Rollback demostrativo (solo workflow_dispatch)
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        run: ./scripts/rollback.sh
+
+      - name: Publicar reportes de pruebas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reportes-maven-${{ github.run_number }}
+          path: |
+            target/surefire-reports/
+            target/failsafe-reports/
+            target/*.jar
+          if-no-files-found: warn

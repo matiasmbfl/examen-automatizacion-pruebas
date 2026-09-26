@@ -1,0 +1,12 @@
+target/
+.idea/
+.vscode/
+*.iml
+.DS_Store
+*.log
+reports/
+.env
+deployments/test/*
+!deployments/test/.gitkeep
+
+.fake
