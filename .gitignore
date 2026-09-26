@@ -9,4 +9,4 @@ reports/
 deployments/test/*
 !deployments/test/.gitkeep
 
-.fake
+.fake*.docx
